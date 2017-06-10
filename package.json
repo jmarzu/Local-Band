@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jmarzu/Local-Band-#readme",
   "dependencies": {
+    "angular": "^1.6.4",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
     "browserify": "^14.4.0",
