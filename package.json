@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "watchify public/app.js -o public/bundle.js",
+    "build": "browserify public/app.js -o public/bundle.js",
+    "start": "npm run watch & nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "browserify": "^14.4.0",
     "express": "^4.15.3",
     "express-jwt": "^5.3.0",
+    "jquery": "^3.2.1",
     "jsonwebtoken": "^7.4.1",
     "mongoose": "^4.10.4",
     "morgan": "^1.8.2",
